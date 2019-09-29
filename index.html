@@ -1,0 +1,49 @@
+<!DOCTYPE html
+ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">  
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<html>
+
+	<head>
+		<title>Quotes &amp Conversion</title>
+		<link rel="stylesheet" type="text/css" href="global.css" />
+		<link rel="stylesheet" type="text/css" href="mystyle.css" />
+		 <script src="myscript.js"> </script> 
+		 <meta charset="utf-8"/>
+	</head>
+
+	<body onload="quoteBox()">
+		<div id="navbar">
+			<a href="#" class="navigation">Quotes &amp Conversion</a>
+			<a href="series.html" class="navigation">Series</a>
+			<a href="magic.html" class="navigation">Magic!</a>
+		</div>
+		<div id="convContainer">
+			<h1 style="padding-bottom:20px;">Hero Converter</h1>
+			<p style="display:inline-block;">Convert: </p>
+			<input id="value" type="text"/>
+			<select id="selType">
+				<option value="lbToKg">lb to kg</option>
+				<option value="kgToLb">kg to lb</option>
+			</select>
+			<button type="button" onclick="convert()">Go</button>
+			<p id ="result"style="display:inline-block;"></p>
+		</div>
+		<div id="container">
+			<div style="display: inline-block; border-style:solid; border-color:#008040; height:200px; width:800px; vertical-align: middle;  text-align:center; background-color:#25f2c4;" id="box">
+				<p id="quote" style="color:#008040; font-family:Arial; font-size:14px; padding-top:60px;"> quote</p>
+			</div>
+				<table style="display: inline-block;" >
+					
+					<tr>
+						<td class="colors" id="color1" style="background-color:#25f2c4; border-color:#008040;" onclick="changeColor(0)"></td>
+						<td class="colors" id="color2" style="background-color:#5732a8; border-color:white;" onclick="changeColor(1)"></td>
+					</tr>
+					<tr>
+					<td class="colors" id="color3" style="background-color:#f44242; border-color:black;" onclick="changeColor(2)"></td>
+					<td class="colors" id="color4" style="background-color: #f5e979; border-color:red;" onclick="changeColor(3)"></td>
+					</tr>
+				</table>
+		</div>
+	</body>
+</html>
