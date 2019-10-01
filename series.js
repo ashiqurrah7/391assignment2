@@ -7,6 +7,9 @@ function seriesRun(){
 	
 	
 	for(var i=0; i<separated.length; i++){
+		if (separated[i]==""){
+		    	separated[i]=0;
+		    }
 		if (parseInt(separated[i], 10)>max){
 			max=separated[i];
 		}
